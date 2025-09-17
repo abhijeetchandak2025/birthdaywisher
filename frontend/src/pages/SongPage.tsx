@@ -38,7 +38,7 @@ const SongPage: FC = () => {
     const generateAudio = async () => {
       try {
         setIsLoading(true);
-        const res = await fetch("http://localhost:5000/api/tts/generate", {
+        const res = await fetch("https://birthdaywisher-f2wz.onrender.com/api/tts/generate", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ text: song.lyrics }),
