@@ -60,7 +60,7 @@ const Registration: React.FC = () => {
     setLoading(true);
 
     try {
-      const res = await fetch("https://birthdaywisher-f2wz.onrender.com/api/auth/register", {
+      const res = await fetch("http://localhost:5000/api/auth/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name: fullName, email, phone }),
@@ -89,7 +89,7 @@ const Registration: React.FC = () => {
 
     try {
       setLoading(true);
-      const res = await fetch("https://birthdaywisher-f2wz.onrender.com/api/auth/verify-otp", {
+      const res = await fetch("http://localhost:5000/api/auth/verify-otp", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ userId, otp }),
