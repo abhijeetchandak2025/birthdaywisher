@@ -38,7 +38,7 @@ const SongPage: FC = () => {
     const generateAudio = async () => {
       try {
         setIsLoading(true);
-        const res = await fetch("https://birthdaywisher-vopu.onrender.com/api/tts/generate", {
+        const res = await fetch("https://birthdaywishermain.onrender.com/api/tts/generate", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ text: song.lyrics }),

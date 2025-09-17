@@ -75,7 +75,7 @@ const SongSelectionPage: FC = () => {
 
     try {
       setLoading(true);
-      const res = await fetch("https://birthdaywisher-vopu.onrender.com/api/songs/generate", {
+      const res = await fetch("https://birthdaywishermain.onrender.com/api/songs/generate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
